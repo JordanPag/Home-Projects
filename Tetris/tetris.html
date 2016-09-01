@@ -1,0 +1,259 @@
+<!Doctype html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="tetris.css">
+	<script src="tetris.js"></script>
+</head>
+<body onkeydown="displayunicode(event)">
+	<h1><span id="t">T</span><span id="e">E</span><span id="T">T</span><span id="r">R</span><span id="i">I</span><span id="s">S</span></h1>
+	<p><h2>Press s to start, and i for instructions on how to play.</h2></p>
+	<div class="backdrop">
+		<div class="grid">
+			<div class="row">
+				<div id="white" class="tl" place="1"></div>
+				<div id="white" class="t" place="2"></div>
+				<div id="white" class="t" place="3"></div>
+				<div id="white" class="t" place="4"></div>
+				<div id="white" class="t" place="5"></div>
+				<div id="white" class="t" place="6"></div>
+				<div id="white" class="t" place="7"></div>
+				<div id="white" class="t" place="8"></div>
+				<div id="white" class="t" place="9"></div>
+				<div id="white" class="tr" place="10"></div>
+			</div>
+			<div class="row">
+				<div id="white" class="l" place="11"></div>
+				<div id="white" place="12"></div>
+				<div id="white" place="13"></div>
+				<div id="white" place="14"></div>
+				<div id="white" place="15"></div>
+				<div id="white" place="16"></div>
+				<div id="white" place="17"></div>
+				<div id="white" place="18"></div>
+				<div id="white" place="19"></div>
+				<div id="white" class="r" place="20"></div>
+			</div>
+			<div class="row">
+				<div id="white" class="l" place="21"></div>
+				<div id="white" place="22"></div>
+				<div id="white" place="23"></div>
+				<div id="white" place="24"></div>
+				<div id="white" place="25"></div>
+				<div id="white" place="26"></div>
+				<div id="white" place="27"></div>
+				<div id="white" place="28"></div>
+				<div id="white" place="29"></div>
+				<div id="white" class="r" place="30"></div>
+			</div>
+			<div class="row">
+				<div id="white" class="l" place="31"></div>
+				<div id="white" place="32"></div>
+				<div id="white" place="33"></div>
+				<div id="white" place="34"></div>
+				<div id="white" place="35"></div>
+				<div id="white" place="36"></div>
+				<div id="white" place="37"></div>
+				<div id="white" place="38"></div>
+				<div id="white" place="39"></div>
+				<div id="white" class="r" place="40"></div>
+			</div>
+			<div class="row">
+				<div id="white" class="l" place="41"></div>
+				<div id="white" place="42"></div>
+				<div id="white" place="43"></div>
+				<div id="white" place="44"></div>
+				<div id="white" place="45"></div>
+				<div id="white" place="46"></div>
+				<div id="white" place="47"></div>
+				<div id="white" place="48"></div>
+				<div id="white" place="49"></div>
+				<div id="white" class="r" place="50"></div>
+			</div>
+			<div class="row">
+				<div id="white" class="l" place="51"></div>
+				<div id="white" place="52"></div>
+				<div id="white" place="53"></div>
+				<div id="white" place="54"></div>
+				<div id="white" place="55"></div>
+				<div id="white" place="56"></div>
+				<div id="white" place="57"></div>
+				<div id="white" place="58"></div>
+				<div id="white" place="59"></div>
+				<div id="white" class="r" place="60"></div>
+			</div>
+			<div class="row">
+				<div id="white" class="l" place="61"></div>
+				<div id="white" place="62"></div>
+				<div id="white" place="63"></div>
+				<div id="white" place="64"></div>
+				<div id="white" place="65"></div>
+				<div id="white" place="66"></div>
+				<div id="white" place="67"></div>
+				<div id="white" place="68"></div>
+				<div id="white" place="69"></div>
+				<div id="white" class="r" place="70"></div>
+			</div>
+			<div class="row">
+				<div id="white" class="l" place="71"></div>
+				<div id="white" place="72"></div>
+				<div id="white" place="73"></div>
+				<div id="white" place="74"></div>
+				<div id="white" place="75"></div>
+				<div id="white" place="76"></div>
+				<div id="white" place="77"></div>
+				<div id="white" place="78"></div>
+				<div id="white" place="79"></div>
+				<div id="white" class="r" place="80"></div>
+			</div>
+			<div class="row">
+				<div id="white" class="l" place="81"></div>
+				<div id="white" place="82"></div>
+				<div id="white" place="83"></div>
+				<div id="white" place="84"></div>
+				<div id="white" place="85"></div>
+				<div id="white" place="86"></div>
+				<div id="white" place="87"></div>
+				<div id="white" place="88"></div>
+				<div id="white" place="89"></div>
+				<div id="white" class="r" place="90"></div>
+			</div>
+			<div class="row">
+				<div id="white" class="l" place="91"></div>
+				<div id="white" place="92"></div>
+				<div id="white" place="93"></div>
+				<div id="white" place="94"></div>
+				<div id="white" place="95"></div>
+				<div id="white" place="96"></div>
+				<div id="white" place="97"></div>
+				<div id="white" place="98"></div>
+				<div id="white" place="99"></div>
+				<div id="white" class="r" place="100"></div>
+			</div>
+			<div class="row">
+				<div id="white" class="l" place="101"></div>
+				<div id="white" place="102"></div>
+				<div id="white" place="103"></div>
+				<div id="white" place="104"></div>
+				<div id="white" place="105"></div>
+				<div id="white" place="106"></div>
+				<div id="white" place="107"></div>
+				<div id="white" place="108"></div>
+				<div id="white" place="109"></div>
+				<div id="white" class="r" place="110"></div>
+			</div>
+			<div class="row">
+				<div id="white" class="l" place="111"></div>
+				<div id="white" place="112"></div>
+				<div id="white" place="113"></div>
+				<div id="white" place="114"></div>
+				<div id="white" place="115"></div>
+				<div id="white" place="116"></div>
+				<div id="white" place="117"></div>
+				<div id="white" place="118"></div>
+				<div id="white" place="119"></div>
+				<div id="white" class="r" place="120"></div>
+			</div>
+			<div class="row">
+				<div id="white" class="l" place="121"></div>
+				<div id="white" place="122"></div>
+				<div id="white" place="123"></div>
+				<div id="white" place="124"></div>
+				<div id="white" place="125"></div>
+				<div id="white" place="126"></div>
+				<div id="white" place="127"></div>
+				<div id="white" place="128"></div>
+				<div id="white" place="129"></div>
+				<div id="white" class="r" place="130"></div>
+			</div>
+			<div class="row">
+				<div id="white" class="bl" place="131"></div>
+				<div id="white" class="b" place="132"></div>
+				<div id="white" class="b" place="133"></div>
+				<div id="white" class="b" place="134"></div>
+				<div id="white" class="b" place="135"></div>
+				<div id="white" class="b" place="136"></div>
+				<div id="white" class="b" place="137"></div>
+				<div id="white" class="b" place="138"></div>
+				<div id="white" class="b" place="139"></div>
+				<div id="white" class="br" place="140"></div>
+			</div>
+			<div class="row">
+				<div id="white" class="bl" place="141"></div>
+				<div id="white" class="b" place="142"></div>
+				<div id="white" class="b" place="143"></div>
+				<div id="white" class="b" place="144"></div>
+				<div id="white" class="b" place="145"></div>
+				<div id="white" class="b" place="146"></div>
+				<div id="white" class="b" place="147"></div>
+				<div id="white" class="b" place="148"></div>
+				<div id="white" class="b" place="149"></div>
+				<div id="white" class="br" place="150"></div>
+			</div>
+			<div class="row">
+				<div id="white" class="bl" place="151"></div>
+				<div id="white" class="b" place="152"></div>
+				<div id="white" class="b" place="153"></div>
+				<div id="white" class="b" place="154"></div>
+				<div id="white" class="b" place="155"></div>
+				<div id="white" class="b" place="156"></div>
+				<div id="white" class="b" place="157"></div>
+				<div id="white" class="b" place="158"></div>
+				<div id="white" class="b" place="159"></div>
+				<div id="white" class="br" place="160"></div>
+			</div>
+			<div class="row">
+				<div id="white" class="bl" place="161"></div>
+				<div id="white" class="b" place="162"></div>
+				<div id="white" class="b" place="163"></div>
+				<div id="white" class="b" place="164"></div>
+				<div id="white" class="b" place="165"></div>
+				<div id="white" class="b" place="166"></div>
+				<div id="white" class="b" place="167"></div>
+				<div id="white" class="b" place="168"></div>
+				<div id="white" class="b" place="169"></div>
+				<div id="white" class="br" place="170"></div>
+			</div>
+			<div class="row">
+				<div id="white" class="bl" place="171"></div>
+				<div id="white" class="b" place="172"></div>
+				<div id="white" class="b" place="173"></div>
+				<div id="white" class="b" place="174"></div>
+				<div id="white" class="b" place="175"></div>
+				<div id="white" class="b" place="176"></div>
+				<div id="white" class="b" place="177"></div>
+				<div id="white" class="b" place="178"></div>
+				<div id="white" class="b" place="179"></div>
+				<div id="white" class="br" place="180"></div>
+			</div>
+			<div class="row">
+				<div id="white" class="bl" place="181"></div>
+				<div id="white" class="b" place="182"></div>
+				<div id="white" class="b" place="183"></div>
+				<div id="white" class="b" place="184"></div>
+				<div id="white" class="b" place="185"></div>
+				<div id="white" class="b" place="186"></div>
+				<div id="white" class="b" place="187"></div>
+				<div id="white" class="b" place="188"></div>
+				<div id="white" class="b" place="189"></div>
+				<div id="white" class="br" place="190"></div>
+			</div>
+			<div class="row">
+				<div id="white" class="bl" place="191"></div>
+				<div id="white" class="b" place="192"></div>
+				<div id="white" class="b" place="193"></div>
+				<div id="white" class="b" place="194"></div>
+				<div id="white" class="b" place="195"></div>
+				<div id="white" class="b" place="196"></div>
+				<div id="white" class="b" place="197"></div>
+				<div id="white" class="b" place="198"></div>
+				<div id="white" class="b" place="199"></div>
+				<div id="white" class="br" place="200"></div>
+			</div>
+		</div>
+	</div>
+	<p><span id="score"></span></p>
+	<p id="gameover"></p>
+</body>
+</html>
