@@ -1,7 +1,5 @@
 var hospital = ["row"];
-for (x=0;x<10;x++) {
-  hospital.push("floor");
-}
+hospital.push("floor");
 hospital.push("rowend");
 
 for (y=0;y<(hospital.length);y++) {
