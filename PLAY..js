@@ -4,12 +4,12 @@ for (x=0;x<10;x++) {
 }
 hospital.push("rowend");
 
-for (x=0;x<hospital.length;x++) {
-  if (hospital[x]=="row") {
+for (y=0;y<(hospital.length);y++) {
+  if (hospital[y]=="row") {
     $("div.grid").append("<div class=row>");
-  } else if (hospital[x]=="rowend") {
+  } else if (hospital[y]=="rowend") {
     $("div.grid").append("</div>");
   } else {
-    $("div.grid").append("<div class='"+hospital[x]+"'></div>");
+    $("div.grid").append("<div class='"+hospital[y]+"'></div>");
   }
 }
