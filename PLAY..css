@@ -1,0 +1,29 @@
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	text-align: center;
+}
+
+.backdrop {
+	align-items: center;
+	background-color: white;
+	display: flex;
+	display: -webkit-flex;
+	height: 425px;
+	justify-content: center;
+	-webkit-align-items: center;
+	-webkit-justify-content: center;
+	width: 100%;
+	margin: auto;
+}
+
+.grid {
+	display: table;
+}
+
+.row {
+	display: table-row;
+}
