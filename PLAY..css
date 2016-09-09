@@ -34,3 +34,10 @@ body {
 	width: 6.25px;
 	display: table-cell;
 }
+
+.floor {
+	background: black;
+	height: 6.25px;
+	width: 6.25px;
+	display: table-cell;
+}
