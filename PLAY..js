@@ -9,13 +9,14 @@ function HospAddFloor(x) {
 HospAddFloor(10);
 
 hospital.push("rowend")
-
+var num = 1;
 for (y=0;y<(hospital.length);y++) {
   if (hospital[y]=="row") {
     $("div.grid").append("<div class='row'>");
   } else if (hospital[y]=="rowend") {
     $("div.grid").append("</div>");
   } else {
-    $("div.grid").append("<div class='"+hospital[y]+"'></div>");
+    $("div.grid").append("<div class='"+hospital[y]+"' id='"+num+"'></div>");
+    num += 1;
   }
 }
