@@ -1,24 +1,24 @@
 var hospital = ["row"];
 
-function HospAddFloor(x) {
+function AddFloor(room, x) {
   for (z=0;z<x;z++) {
-    hospital.push("floor");
+    {room}.push("floor");
   }
 }
 
-HospAddFloor(10);
+AddFloor("hospital", 10);
 hospital.push("h-wall");
 hospital.push("door");
 hospital.push("door");
 hospital.push("h-wall");
-HospAddFloor(18);
+AddFloor("hospital", 18);
 hospital.push("rowend");
 hospital.push("row");
-HospAddFloor(10);
+AddFloor("hospital", 10);
 hospital.push("h-wall");
-HospAddFloor(2);
+AddFloor("hospital", 2);
 hospital.push("h-wall");
-HospAddFloor(18);
+AddFloor("hospital", 18);
 hospital.push("rowend");
 
 
