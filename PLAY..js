@@ -32,9 +32,95 @@ hospital.push("h-wall");
 hospital.push("h-wall");
 AddFloor("hospital", 14);
 hospital.push("rowend");
+hospital.push("row");
+AddFloor("hospital", 7);
+hospital.push("h-wall");
+hospital.push("h-wall");
+hospital.push("h-wall");
+AddFloor("hospital", 7);
+hospital.push("h-wall");
+hospital.push("h-wall");
+hospital.push("h-wall");
+AddFloor("hospital", 12);
+hospital.push("rowend");
+hospital.push("row");
 
+hospital.push("rowend");
+hospital.push("row");
 
+hospital.push("rowend");
+hospital.push("row");
 
+hospital.push("rowend");
+hospital.push("row");
+
+hospital.push("rowend");
+hospital.push("row");
+
+hospital.push("rowend");
+hospital.push("row");
+
+hospital.push("rowend");
+hospital.push("row");
+
+hospital.push("rowend");
+hospital.push("row");
+
+hospital.push("rowend");
+hospital.push("row");
+
+hospital.push("rowend");
+hospital.push("row");
+
+hospital.push("rowend");
+hospital.push("row");
+
+hospital.push("rowend");
+hospital.push("row");
+
+hospital.push("rowend");
+hospital.push("row");
+
+hospital.push("rowend");
+hospital.push("row");
+
+hospital.push("rowend");
+hospital.push("row");
+
+hospital.push("rowend");
+hospital.push("row");
+
+hospital.push("rowend");
+hospital.push("row");
+
+hospital.push("rowend");
+hospital.push("row");
+
+hospital.push("rowend");
+hospital.push("row");
+
+hospital.push("rowend");
+hospital.push("row");
+
+hospital.push("rowend");
+hospital.push("row");
+
+hospital.push("rowend");
+hospital.push("row");
+
+hospital.push("rowend");
+hospital.push("row");
+
+hospital.push("rowend");
+hospital.push("row");
+
+hospital.push("rowend");
+hospital.push("row");
+
+hospital.push("rowend");
+hospital.push("row");
+
+hospital.push("rowend");
 hospital.push("row");
 AddFloor("hospital", 32);
 hospital.push("rowend");
