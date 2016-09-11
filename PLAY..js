@@ -17,10 +17,10 @@ hospital.push("rowend");
 
 hospital.push("row");
 HospAddFloor(32);
-hospital.pus("rowend");
+hospital.push("rowend");
 hospital.push("row");
 HospAddFloor(32);
-hospital.pus("rowend");
+hospital.push("rowend");
 var num = 1;
 for (y=0;y<(hospital.length);y++) {
   if (hospital[y]=="row") {
