@@ -1,8 +1,14 @@
 var hospital = ["row"];
-hospital.push("floor");
-hospital.push("rowend");
 
-$("div.grid").append("<div class='floor'></div>");
+function HospAddFloor(x) {
+  for (z=0;z<x;z++) {
+    hospital.push("floor");
+  }
+}
+
+HospAddFloor(10);
+
+hospital.push("rowend")
 
 for (y=0;y<(hospital.length);y++) {
   if (hospital[y]=="row") {
