@@ -13,6 +13,12 @@ hospital.push("door");
 hospital.push("h-wall");
 HospAddFloor(18);
 hospital.push("rowend");
+HospAddFloor(10);
+hospital.push("h-wall");
+HospAddFloor(2);
+hospital.push("h-wall");
+HospAddFloor(18);
+hospital.push("rowend");
 
 
 hospital.push("row");
