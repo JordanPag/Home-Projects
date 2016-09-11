@@ -20,6 +20,18 @@ AddFloor("hospital", 2);
 hospital.push("h-wall");
 AddFloor("hospital", 18);
 hospital.push("rowend");
+hospital.push("row");
+AddFloor("hospital", 10);
+hospital.push("h-wall");
+AddFloor("hospital", 2);
+hospital.push("h-wall");
+hospital.push("h-wall");
+hospital.push("h-wall");
+hospital.push("h-wall");
+hospital.push("h-wall");
+AddFloor("hospital", 14);
+hospital.push("rowend");
+
 
 
 hospital.push("row");
