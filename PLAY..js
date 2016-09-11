@@ -36,10 +36,10 @@ hospital.push("rowend");
 
 
 hospital.push("row");
-HospAddFloor(32);
+AddFloor("hospital", 32);
 hospital.push("rowend");
 hospital.push("row");
-HospAddFloor(32);
+AddFloor("hospital", 32);
 hospital.push("rowend");
 var num = 1;
 for (y=0;y<(hospital.length);y++) {
