@@ -7,8 +7,12 @@ function HospAddFloor(x) {
 }
 
 HospAddFloor(10);
-
-hospital.push("rowend")
+hospital.push("h-wall");
+hospital.push("door");
+hospital.push("door");
+hospital.push("h-wall");
+HospAddFloor(18);
+hospital.push("rowend");
 var num = 1;
 for (y=0;y<(hospital.length);y++) {
   if (hospital[y]=="row") {
