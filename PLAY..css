@@ -30,21 +30,28 @@ body {
 
 .h-wall {
 	background: #ff3399;
-	height: 6.25px;
-	width: 6.25px;
+	height: 6px;
+	width: 6px;
 	display: table-cell;
 }
 
 .floor {
 	background: black;
-	height: 6.25px;
-	width: 6.25px;
+	height: 6px;
+	width: 6px;
 	display: table-cell;
 }
 
 .door {
 	background: black;
-	height: 6.25px;
-	width: 6.25px;
+	height: 6px;
+	width: 6px;
+	display: table-cell;
+}
+
+.obj {
+	background: green;
+	height: 6px;
+	width: 6px;
 	display: table-cell;
 }
