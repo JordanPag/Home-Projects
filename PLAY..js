@@ -2,7 +2,7 @@ var hospital = ["row"];
 
 function AddFloor(room, x) {
   for (z=0;z<x;z++) {
-    {room}.push("floor");
+    room.push("floor");
   }
 }
 
