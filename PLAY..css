@@ -43,6 +43,13 @@ body {
 }
 
 .door {
+	background: gray;
+	height: 6px;
+	width: 6px;
+	display: table-cell;
+}
+
+.door-o {
 	background: black;
 	height: 6px;
 	width: 6px;
