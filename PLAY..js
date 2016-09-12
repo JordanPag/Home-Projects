@@ -90,7 +90,12 @@ hospital.push("h-wall");
 AddFloor("hospital", 8);
 hospital.push("rowend");
 hospital.push("row");
-
+hospital.push("floor");
+hospital.push("h-wall");
+AddFloor("hospital", 21);
+hospital.push("h-wall");
+hospital.push("h-wall");
+AddFloor("hospital", 7);
 hospital.push("rowend");
 hospital.push("row");
 
