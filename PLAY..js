@@ -97,6 +97,7 @@ hospital.push("h-wall");
 hospital.push("h-wall");
 AddFloor("hospital", 8);
 hospital.push("rowend");
+//row 8
 hospital.push("row");
 hospital.push("floor");
 hospital.push("h-wall");
@@ -105,6 +106,7 @@ hospital.push("h-wall");
 hospital.push("h-wall");
 AddFloor("hospital", 7);
 hospital.push("rowend");
+//row 9
 hospital.push("row");
 hospital.push("h-wall");
 AddFloor("hospital", 5);
@@ -116,76 +118,100 @@ hospital.push("h-wall");
 hospital.push("h-wall");
 AddFloor("hospital", 5);
 hospital.push("rowend");
+//row 10
 hospital.push("row");
 hospital.push("h-wall");
-AddFloor("hospital", 23);
+AddFloor("hospital", 24);
 hospital.push("obj");
 hospital.push("h-wall");
 hospital.push("h-wall");
+AddFloor("hospital", 5);
 hospital.push("rowend");
+//row 11
 hospital.push("row");
 
 hospital.push("rowend");
+//row 12
 hospital.push("row");
 
 hospital.push("rowend");
+//row 13
 hospital.push("row");
 
 hospital.push("rowend");
+//row 14
 hospital.push("row");
 
 hospital.push("rowend");
+//row 15
 hospital.push("row");
 
 hospital.push("rowend");
+//row 16
 hospital.push("row");
 
 hospital.push("rowend");
+//row 17
 hospital.push("row");
 
 hospital.push("rowend");
+//row 18
 hospital.push("row");
 
 hospital.push("rowend");
+//row 19
 hospital.push("row");
 
 hospital.push("rowend");
+//row 20
 hospital.push("row");
 
 hospital.push("rowend");
+//row 21
 hospital.push("row");
 
 hospital.push("rowend");
+//row 22
 hospital.push("row");
 
 hospital.push("rowend");
+//row 23
 hospital.push("row");
 
 hospital.push("rowend");
+//row 24
 hospital.push("row");
 
 hospital.push("rowend");
+//row 25
 hospital.push("row");
 
 hospital.push("rowend");
+//row 26
 hospital.push("row");
 
 hospital.push("rowend");
+//row 27
 hospital.push("row");
 
 hospital.push("rowend");
+//row 28
 hospital.push("row");
 
 hospital.push("rowend");
+//row 29
 hospital.push("row");
 
 hospital.push("rowend");
+//row 30
 hospital.push("row");
 
 hospital.push("rowend");
+//row 31
 hospital.push("row");
 AddFloor("hospital", 32);
 hospital.push("rowend");
+//row 32
 hospital.push("row");
 AddFloor("hospital", 32);
 hospital.push("rowend");
