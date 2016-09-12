@@ -160,7 +160,12 @@ AddFloor("hospital", 1);
 hospital.push("rowend");
 //row 15
 hospital.push("row");
-
+hospital.push("h-wall");
+AddFloor("hospital", 11);
+hospital.push("obj");
+AddFloor("hospital", 17);
+hospital.push("h-wall");
+AddFloor("hospital", 1);
 hospital.push("rowend");
 //row 16
 hospital.push("row");
