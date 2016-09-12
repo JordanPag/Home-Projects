@@ -23,6 +23,7 @@ function AddRoom(room) {
   }
 } 
 
+//row 1
 AddFloor("hospital", 10);
 hospital.push("h-wall");
 hospital.push("door");
@@ -30,6 +31,7 @@ hospital.push("door");
 hospital.push("h-wall");
 AddFloor("hospital", 18);
 hospital.push("rowend");
+//row 2
 hospital.push("row");
 AddFloor("hospital", 10);
 hospital.push("h-wall");
@@ -37,6 +39,7 @@ AddFloor("hospital", 2);
 hospital.push("h-wall");
 AddFloor("hospital", 18);
 hospital.push("rowend");
+//row 3
 hospital.push("row");
 AddFloor("hospital", 10);
 hospital.push("h-wall");
@@ -48,6 +51,7 @@ hospital.push("h-wall");
 hospital.push("h-wall");
 AddFloor("hospital", 14);
 hospital.push("rowend");
+//row 4
 hospital.push("row");
 AddFloor("hospital", 7);
 hospital.push("h-wall");
@@ -59,6 +63,7 @@ hospital.push("h-wall");
 hospital.push("h-wall");
 AddFloor("hospital", 12);
 hospital.push("rowend");
+//row 5
 hospital.push("row");
 AddFloor("hospital", 5);
 hospital.push("rowend");
@@ -69,6 +74,8 @@ AddFloor("hospital", 11);
 hospital.push("h-wall");
 hospital.push("h-wall");
 AddFloor("hospital", 11);
+hospital.push("rowend");
+//row 6
 hospital.push("row");
 AddFloor("hospital", 2);
 hospital.push("h-wall");
@@ -80,6 +87,7 @@ hospital.push("h-wall");
 hospital.push("h-wall");
 AddFloor("hospital", 9);
 hospital.push("rowend");
+//row 7
 hospital.push("row");
 AddFloor("hospital", 1);
 hospital.push("h-wall");
@@ -101,14 +109,19 @@ hospital.push("row");
 hospital.push("h-wall");
 AddFloor("hospital", 5);
 hospital.push("obj");
-AddFloor("hospital", 18);
+AddFloor("hospital", 17);
 hospital.push("h-wall");
 hospital.push("rowend");
 hospital.push("h-wall");
 hospital.push("h-wall");
 AddFloor("hospital", 5);
+hospital.push("rowend");
 hospital.push("row");
-
+hospital.push("h-wall");
+AddFloor("hospital", 23);
+hospital.push("obj");
+hospital.push("h-wall");
+hospital.push("h-wall");
 hospital.push("rowend");
 hospital.push("row");
 
