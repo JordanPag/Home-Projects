@@ -145,7 +145,11 @@ AddFloor("hospital", 2);
 hospital.push("rowend");
 //row 13
 hospital.push("row");
-
+hospital.push("h-wall");
+AddFloor("hospital", 28);
+hospital.push("h-wall");
+hospital.push("h-wall");
+AddFloor("hospital", 1);
 hospital.push("rowend");
 //row 14
 hospital.push("row");
