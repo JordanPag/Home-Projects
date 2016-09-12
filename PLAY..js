@@ -125,11 +125,15 @@ AddFloor("hospital", 24);
 hospital.push("obj");
 hospital.push("h-wall");
 hospital.push("h-wall");
-AddFloor("hospital", 5);
+AddFloor("hospital", 4);
 hospital.push("rowend");
 //row 11
 hospital.push("row");
-
+hospital.push("h-wall");
+AddFloor("hospital", 26);
+hospital.push("h-wall");
+hospital.push("h-wall");
+AddFloor("hospital", 3);
 hospital.push("rowend");
 //row 12
 hospital.push("row");
