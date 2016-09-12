@@ -164,3 +164,5 @@ hospital.push("rowend");
 hospital.push("row");
 AddFloor("hospital", 32);
 hospital.push("rowend");
+
+AddRoom("hospital");
