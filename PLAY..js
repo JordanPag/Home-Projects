@@ -249,7 +249,11 @@ hospital.push("row");
 hospital.push("rowend");
 //row 27
 hospital.push("row");
-
+hospital.push("h-wall");
+hospital.push("obj");
+AddFloor("hospital", 28);
+hospital.push("h-wall");
+hospital.push("floor");
 hospital.push("rowend");
 //row 28
 hospital.push("row");
