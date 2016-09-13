@@ -180,7 +180,14 @@ hospital.push("floor");
 hospital.push("rowend");
 //row 17
 hospital.push("row");
-
+hospital.push("door");
+AddFloor("hospital", 10);
+hospital.push("h-wall");
+hospital.push("h-wall");
+hospital.push("h-wall");
+AddFloor("hospital", 16);
+hospital.push("h-wall");
+hospital.push("floor");
 hospital.push("rowend");
 //row 18
 hospital.push("row");
