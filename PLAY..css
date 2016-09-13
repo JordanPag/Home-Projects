@@ -62,3 +62,24 @@ body {
 	width: 6px;
 	display: table-cell;
 }
+
+.bedroom-wall {
+	background: #4d2600;
+	height: 6px;
+	width: 6px;
+	display: table-cell;
+}
+
+.office-wall {
+	background: #0000ff;
+	height: 6px;
+	width: 6px;
+	display: table-cell;
+}
+
+.classroom-wall {
+	background: #e6b800;
+	height: 6px;
+	width: 6px;
+	display: table-cell;
+}
