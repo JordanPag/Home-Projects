@@ -202,11 +202,25 @@ hospital.push("floor");
 hospital.push("rowend");
 //row 19
 hospital.push("row");
-
+hospital.push("h-wall");
+AddFloor("hospital", 10);
+hospital.push("h-wall");
+hospital.push("h-wall");
+hospital.push("h-wall");
+AddFloor("hospital", 16);
+hospital.push("h-wall");
+hospital.push("floor");
 hospital.push("rowend");
 //row 20
 hospital.push("row");
-
+hospital.push("h-wall");
+AddFloor("hospital", 10);
+hospital.push("h-wall");
+hospital.push("h-wall");
+hospital.push("h-wall");
+AddFloor("hospital", 16);
+hospital.push("h-wall");
+hospital.push("floor");
 hospital.push("rowend");
 //row 21
 hospital.push("row");
