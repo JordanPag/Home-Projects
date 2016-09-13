@@ -1,4 +1,7 @@
 var hospital = ["row"];
+var bedroom = [""];
+var office = [""];
+var classroom = [""];
 
 function AddFloor(room, x) {
   for (z=0;z<x;z++) {
