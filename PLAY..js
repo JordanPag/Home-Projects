@@ -23,6 +23,23 @@ function AddRoom(room) {
   }
 } 
 
+function AddRow(room,blocks) {
+  var rom = eval(room);
+  rom.push("row");
+  for (x=0;x<32;x++) {
+    if (blocks[x]=="o") {
+      rom.push("obj");
+    } else if (blocks[x]=="f") {
+      rom.push("floor");
+    } else if (blocks[x]=="d") {
+      rom.push("door");
+    } else if (blocks[x]=="w") {
+      rom.push(rom+"-wall");
+    }
+  }
+  rom.push("rowend");
+}
+
 //row 1
 AddFloor("hospital", 10);
 hospital.push("h-wall");
