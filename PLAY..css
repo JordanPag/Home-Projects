@@ -63,21 +63,21 @@ body {
 	display: table-cell;
 }
 
-.bedroom-wall {
+.bedroomwall {
 	background: #4d2600;
 	height: 6px;
 	width: 6px;
 	display: table-cell;
 }
 
-.office-wall {
+.officewall {
 	background: #0000ff;
 	height: 6px;
 	width: 6px;
 	display: table-cell;
 }
 
-.classroom-wall {
+.classroomwall {
 	background: #e6b800;
 	height: 6px;
 	width: 6px;
