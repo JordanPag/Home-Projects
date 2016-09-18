@@ -37,7 +37,7 @@ function AddRow(room,blocks) {
     } else if (blocks[x]=="d") {
       rom.push("door");
     } else if (blocks[x]=="w") {
-      rom.push(rom+"-wall");
+      rom.push(rom+"wall");
     }
   }
   rom.push("rowend");
