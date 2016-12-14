@@ -83,3 +83,10 @@ body {
 	width: 6px;
 	display: table-cell;
 }
+
+.player {
+	background: #580e7c;
+	height: 6px;
+	width: 6px;
+	display: table-cell;
+}
