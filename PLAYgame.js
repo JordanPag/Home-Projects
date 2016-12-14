@@ -17,3 +17,4 @@ function displayunicode(y) {
 	}
 }
 
+$("div#"+place).attr("class","player");
