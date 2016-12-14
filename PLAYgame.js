@@ -17,5 +17,5 @@ function displayunicode(y) {
 	}
 }
 
-addRoom("hospital");
+AddRoom("hospital");
 $("div#"+place).attr("class","player");
