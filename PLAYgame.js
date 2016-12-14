@@ -4,16 +4,16 @@ var place = 300;
 function displayunicode(y) {
 	var unicode = y.keyCode;
 	if (unicode == 37) {
-    //left arrow
+		//left arrow
 	}
-  if (unicode == 39) {
-    //right arrow
+	if (unicode == 39) {
+		//right arrow
 	}
-  if (unicode == 38) {
-    //up arrow
+	if (unicode == 38) {
+		//up arrow
 	}
-  if (unicode == 40) {
-    //down arrow
+	if (unicode == 40) {
+		//down arrow
 	}
 }
 
