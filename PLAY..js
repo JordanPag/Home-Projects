@@ -428,5 +428,3 @@ AddRow("classroom",["f","f","f","f","f","f","f","f","f","f","w","w","w","w","w",
 AddRow("classroom",["f","f","f","f","f","f","f","f","f","f","f","w","w","w","w","w","f","f","w","w","w","w","w","w","w","f","f","f","f","f","f","f"]);
 AddRow("classroom",["f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","w","f","f","w","f","f","f","f","f","f","f","f","f","f","f","f","f"]);
 AddRow("classroom",["f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","w","d","d","w","f","f","f","f","f","f","f","f","f","f","f","f","f"]);
-
-AddRoom("classroom");
