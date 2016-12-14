@@ -1,5 +1,5 @@
 console.log("yay");
-var place = 100;
+var place = 300;
 
 function displayunicode(y) {
 	var unicode = y.keyCode;
