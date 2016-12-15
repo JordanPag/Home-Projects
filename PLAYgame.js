@@ -19,3 +19,8 @@ function displayunicode(y) {
 
 AddRoom("hospital");
 $("div#"+place).attr("class","player");
+
+function placePlayer(newplace) {
+	$("div#"+place).attr("class","floor");
+	$("div#"+newplace).attr("class","player");
+}
