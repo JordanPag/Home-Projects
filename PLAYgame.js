@@ -7,6 +7,7 @@ function displayunicode(y) {
 		//left arrow
 		var placenew = $("div#"+(placenew-1));
 		console.log(placenew);
+		console.log(placenew.hasClass("floor"));
 	}
 	if (unicode == 39) {
 		//right arrow
