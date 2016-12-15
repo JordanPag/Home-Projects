@@ -5,7 +5,7 @@ function displayunicode(y) {
 	var unicode = y.keyCode;
 	if (unicode == 37) {
 		//left arrow
-		var placenew = $("div#"+(placenew-1)).attr("class");
+		var placenew = $("div#"+(placenew-1));
 		console.log(placenew);
 	}
 	if (unicode == 39) {
