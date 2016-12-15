@@ -10,12 +10,18 @@ function displayunicode(y) {
 	}
 	if (unicode == 39) {
 		//right arrow
+		var placenew = $("div#"+(place+1)).hasClass("floor");
+		console.log(placenew);
 	}
 	if (unicode == 38) {
 		//up arrow
+		var placenew = $("div#"+(place-32)).hasClass("floor");
+		console.log(placenew);
 	}
 	if (unicode == 40) {
 		//down arrow
+		var placenew = $("div#"+(place+32)).hasClass("floor");
+		console.log(placenew);
 	}
 }
 
