@@ -5,6 +5,8 @@ function displayunicode(y) {
 	var unicode = y.keyCode;
 	if (unicode == 37) {
 		//left arrow
+		var placenew = $("div#"+(placenew-1)).attr("class");
+		console.log(placenew);
 	}
 	if (unicode == 39) {
 		//right arrow
@@ -17,10 +19,10 @@ function displayunicode(y) {
 	}
 }
 
-AddRoom("hospital");
-$("div#"+place).attr("class","player");
-
 function placePlayer(newplace) {
 	$("div#"+place).attr("class","floor");
 	$("div#"+newplace).attr("class","player");
 }
+
+AddRoom("hospital");
+$("div#"+place).attr("class","player");
