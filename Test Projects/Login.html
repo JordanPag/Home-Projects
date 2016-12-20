@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Test login</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	</head>
+	<body>
+		<script>
+			$.ajax({
+				type: "GET",
+				url: "https://iam.googleapis.com/v1/projects/testing-142118/serviceAccounts/{jpags2938@gmail.com}?key=AIzaSyAJlZxH7B-0szi5v1eDi6CSa2KZRav3lQs",
+				success: (response) => {
+					console.log(response);
+				}
+			})
+		</script>
+	</body>
+</html>

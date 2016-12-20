@@ -6,6 +6,7 @@ var bit2;
 var bit3;
 var bit4;
 var score = 0;
+console.log(score);
 var shape;
 var phase;
 
