@@ -40,6 +40,7 @@ function displayunicode(y) {
 function placePlayer(newplace) {
 	$("div#"+place).attr("class","floor");
 	$("div#"+newplace).attr("class","player");
+	place = newplace;
 }
 
 AddRoom("hospital");
