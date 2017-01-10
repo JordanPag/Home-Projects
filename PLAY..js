@@ -46,6 +46,7 @@ function AddRow(room,blocks) {
 }
 
 //row 1
+hospital.push("row");
 AddFloor("hospital", 10);
 hospital.push("h-wall");
 hospital.push("door");
