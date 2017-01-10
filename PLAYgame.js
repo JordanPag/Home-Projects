@@ -1,6 +1,9 @@
 console.log("yay");
 var place = 300;
 
+function advance(){
+}
+
 function displayunicode(y) {
 	var unicode = y.keyCode;
 	if (unicode == 37) {
@@ -10,6 +13,15 @@ function displayunicode(y) {
 		if(placenew==true){
 			placePlayer(place-1);
 		}
+		else{
+			placenew = $("div#"+(place-1)).hasClass("obj");
+			if(placenew==true){
+				placePlayer(place-1);
+				points += 1;
+				if(points==5){
+					advance();
+				}
+		}
 	}
 	if (unicode == 39) {
 		//right arrow
@@ -17,6 +29,15 @@ function displayunicode(y) {
 		console.log(placenew);
 		if(placenew==true){
 			placePlayer(place+1);
+		}
+		else{
+			placenew = $("div#"+(place+1)).hasClass("obj");
+			if(placenew==true){
+				placePlayer(place+1);
+				points += 1;
+				if(points==5){
+					advance();
+				}
 		}
 	}
 	if (unicode == 38) {
@@ -26,6 +47,15 @@ function displayunicode(y) {
 		if(placenew==true){
 			placePlayer(place-32);
 		}
+		else{
+			placenew = $("div#"+(place-32)).hasClass("obj");
+			if(placenew==true){
+				placePlayer(place-32);
+				points += 1;
+				if(points==5){
+					advance();
+				}
+		}
 	}
 	if (unicode == 40) {
 		//down arrow
@@ -33,6 +63,15 @@ function displayunicode(y) {
 		console.log(placenew);
 		if(placenew==true){
 			placePlayer(place+32);
+		}
+		else{
+			placenew = $("div#"+(place+32)).hasClass("obj");
+			if(placenew==true){
+				placePlayer(place+32);
+				points += 1;
+				if(points==5){
+					advance();
+				}
 		}
 	}
 }
