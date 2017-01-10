@@ -21,6 +21,7 @@ function displayunicode(y) {
 				if(points==5){
 					advance();
 				}
+			}
 		}
 	}
 	if (unicode == 39) {
@@ -38,6 +39,7 @@ function displayunicode(y) {
 				if(points==5){
 					advance();
 				}
+			}
 		}
 	}
 	if (unicode == 38) {
@@ -55,6 +57,7 @@ function displayunicode(y) {
 				if(points==5){
 					advance();
 				}
+			}
 		}
 	}
 	if (unicode == 40) {
@@ -72,6 +75,7 @@ function displayunicode(y) {
 				if(points==5){
 					advance();
 				}
+			}
 		}
 	}
 }
