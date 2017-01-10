@@ -2,6 +2,7 @@ var hospital = ["row"];
 var bedroom = [""];
 var office = [""];
 var classroom = [""];
+var points = 0;
 
 function AddFloor(room, x) {
   for (z=0;z<x;z++) {
@@ -11,6 +12,7 @@ function AddFloor(room, x) {
 }
 
 function AddRoom(room) {
+  points = 0;
   $("div.grid").html("");
   var num = 0;
   var rem = eval(room);
