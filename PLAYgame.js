@@ -19,6 +19,7 @@ function displayunicode(y) {
 			if(placenew==true){
 				placePlayer(place-1);
 				points += 1;
+				console.log(points);
 				if(points==5){
 					advance();
 				}
@@ -37,6 +38,7 @@ function displayunicode(y) {
 			if(placenew==true){
 				placePlayer(place+1);
 				points += 1;
+				console.log(points);
 				if(points==5){
 					advance();
 				}
@@ -55,6 +57,7 @@ function displayunicode(y) {
 			if(placenew==true){
 				placePlayer(place-32);
 				points += 1;
+				console.log(points);
 				if(points==5){
 					advance();
 				}
@@ -73,6 +76,7 @@ function displayunicode(y) {
 			if(placenew==true){
 				placePlayer(place+32);
 				points += 1;
+				console.log(points);
 				if(points==5){
 					advance();
 				}
