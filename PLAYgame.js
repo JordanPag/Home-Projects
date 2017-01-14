@@ -2,6 +2,7 @@ console.log("yay");
 var place = 300;
 
 function advance(){
+	console.log("advance");
 	$("div#door").attr("class","door-o");
 }
 
