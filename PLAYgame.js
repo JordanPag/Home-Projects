@@ -10,7 +10,6 @@ function displayunicode(y) {
 	if (unicode == 37) {
 		//left arrow
 		var placenew = $("div#"+(place-1)).hasClass("floor");
-		console.log(placenew);
 		if(placenew==true){
 			placePlayer(place-1);
 		}
@@ -29,7 +28,6 @@ function displayunicode(y) {
 	if (unicode == 39) {
 		//right arrow
 		var placenew = $("div#"+(place+1)).hasClass("floor");
-		console.log(placenew);
 		if(placenew==true){
 			placePlayer(place+1);
 		}
@@ -48,7 +46,6 @@ function displayunicode(y) {
 	if (unicode == 38) {
 		//up arrow
 		var placenew = $("div#"+(place-32)).hasClass("floor");
-		console.log(placenew);
 		if(placenew==true){
 			placePlayer(place-32);
 		}
@@ -67,7 +64,6 @@ function displayunicode(y) {
 	if (unicode == 40) {
 		//down arrow
 		var placenew = $("div#"+(place+32)).hasClass("floor");
-		console.log(placenew);
 		if(placenew==true){
 			placePlayer(place+32);
 		}
