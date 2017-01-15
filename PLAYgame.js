@@ -3,7 +3,7 @@ var place = 300;
 
 function advance(){
 	console.log("advance");
-	$("div#door").attr("class","door-o");
+	$("div.door").attr("class","door-o");
 }
 
 function displayunicode(y) {
