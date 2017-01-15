@@ -348,7 +348,7 @@ AddRow("bedroom",["w","f","f","f","f","f","f","f","f","f","f","f","w","f","f","f
 AddRow("bedroom",["w","f","f","f","f","f","f","f","f","f","f","f","w","f","f","f","w","f","f","f","f","f","f","f","f","f","f","f","f","f","f","w"]);
 AddRow("bedroom",["w","f","f","f","f","f","f","f","f","f","f","f","w","w","o","w","w","f","f","f","f","f","f","f","f","f","f","f","f","f","f","w"]);
 AddRow("bedroom",["w","f","f","f","f","f","f","f","f","f","f","f","w","w","w","w","w","f","f","f","f","f","f","f","f","f","f","f","f","f","f","w"]);
-AddRow("bedroom",["w","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","w"]);
+AddRow("bedroom",["w","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","d"]);
 AddRow("bedroom",["w","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","d"]);
 AddRow("bedroom",["w","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","d"]);
 AddRow("bedroom",["w","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","w"]);
@@ -397,7 +397,7 @@ AddRow("office",["w","w","w","f","w","w","w","f","w","f","w","f","f","f","f","f"
 AddRow("office",["w","w","w","f","f","f","w","f","w","f","w","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","w","w","w","f","w","f"]);
 AddRow("office",["f","w","o","f","w","f","w","f","w","f","w","w","w","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","w","f"]);
 AddRow("office",["f","w","w","w","w","f","f","f","w","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","w","w","w","w","w","f"]);
-AddRow("office",["f","f","f","w","w","w","w","w","w","w","w","w","w","d","d","d","w","w","w","w","w","w","w","w","w","w","w","w","w","w","w","f"]);
+AddRow("office",["f","f","f","w","w","w","w","w","w","w","w","d","d","w","w","w","w","w","w","w","w","w","w","w","w","w","w","w","w","w","w","f"]);
 
 AddRow("classroom",["f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f"]);
 AddRow("classroom",["f","f","f","f","w","w","w","w","w","w","w","w","w","w","w","w","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f"]);
