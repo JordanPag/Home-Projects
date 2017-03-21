@@ -8,6 +8,7 @@ var bit4;
 var score = 0;
 var shape;
 var phase;
+const blocky = new block(1,1,1,1);
 
 function displayunicode(y) {
 	var unicode = y.keyCode;
@@ -15,16 +16,16 @@ function displayunicode(y) {
 		time = 0;
 	}
 	if (unicode == 37) {
-		left();
+		blocky.left();
 	}
 	if (unicode == 38) {
-		up();
+		blocky.up();
 	}
 	if (unicode == 39) {
-		right();
+		blocky.right();
 	}
 	if (unicode == 40) {
-		down();
+		blocky.down();
 	}
 	if (unicode == 83) {
 		if (n > 0) {
@@ -161,108 +162,8 @@ function spawnblock() {
 		if (r=="red"||s=="red"||t=="red"||u=="red") {
 			$("p#gameover").html("<h1>Game over! Press r to play again.</h1>");
 		} else {
-			const blocky = new block(bit1,bit2,bit3,bit4);
+			blocky.set(bit1,bit2,bit3,bit4);
 			setTimeout(blocky.moveblock, 1000);
 		}
 	}
-}
-
-function left() {
-	$("div[place=" + bit1 + "]").attr("id", "white");
-	$("div[place=" + bit2 + "]").attr("id", "white");
-	$("div[place=" + bit3 + "]").attr("id", "white");
-	$("div[place=" + bit4 + "]").attr("id", "white");
-	var first = $("div[place="+(bit1-1)+"]").attr("id");
-	var second = $("div[place="+(bit2-1)+"]").attr("id");
-	var third = $("div[place="+(bit3-1)+"]").attr("id");
-	var fourth = $("div[place="+(bit4-1)+"]").attr("id");
-	if (bit1 % 10 == 1||bit2 % 10 == 1||bit3 % 10 == 1||bit4 % 10 == 1) {
-		$("div[place=" + bit1 + "]").attr("id", "red");
-		$("div[place=" + bit2 + "]").attr("id", "red");
-		$("div[place=" + bit3 + "]").attr("id", "red");
-		$("div[place=" + bit4 + "]").attr("id", "red");
-	} else if (first=="red"||second=="red"||third=="red"||fourth=="red") {
-		$("div[place=" + bit1 + "]").attr("id", "red");
-		$("div[place=" + bit2 + "]").attr("id", "red");
-		$("div[place=" + bit3 + "]").attr("id", "red");
-		$("div[place=" + bit4 + "]").attr("id", "red");
-	} else {
-		$("div[place=" + bit1 + "]").attr("id", "white");
-		$("div[place=" + bit2 + "]").attr("id", "white");
-		$("div[place=" + bit3 + "]").attr("id", "white");
-		$("div[place=" + bit4 + "]").attr("id", "white");
-		bit1 = bit1 - 1;
-		bit2 = bit2 - 1;
-		bit3 = bit3 - 1;
-		bit4 = bit4 - 1;
-		$("div[place=" + bit1 + "]").attr("id", "red");
-		$("div[place=" + bit2 + "]").attr("id", "red");
-		$("div[place=" + bit3 + "]").attr("id", "red");
-		$("div[place=" + bit4 + "]").attr("id", "red");
-	}
-}
-
-function right() {
-	$("div[place=" + bit1 + "]").attr("id", "white");
-	$("div[place=" + bit2 + "]").attr("id", "white");
-	$("div[place=" + bit3 + "]").attr("id", "white");
-	$("div[place=" + bit4 + "]").attr("id", "white");
-	var first = $("div[place="+(bit1+1)+"]").attr("id");
-	var second = $("div[place="+(bit2+1)+"]").attr("id");
-	var third = $("div[place="+(bit3+1)+"]").attr("id");
-	var fourth = $("div[place="+(bit4+1)+"]").attr("id");
-	if (bit1 % 10 == 0||bit2 % 10 ==0||bit3 % 10 == 0||bit4 % 10 == 0) {
-		$("div[place=" + bit1 + "]").attr("id", "red");
-		$("div[place=" + bit2 + "]").attr("id", "red");
-		$("div[place=" + bit3 + "]").attr("id", "red");
-		$("div[place=" + bit4 + "]").attr("id", "red");
-	} else if (first=="red"||second=="red"||third=="red"||fourth=="red") {
-		$("div[place=" + bit1 + "]").attr("id", "red");
-		$("div[place=" + bit2 + "]").attr("id", "red");
-		$("div[place=" + bit3 + "]").attr("id", "red");
-		$("div[place=" + bit4 + "]").attr("id", "red");
-	} else {
-		$("div[place=" + bit1 + "]").attr("id", "white");
-		$("div[place=" + bit2 + "]").attr("id", "white");
-		$("div[place=" + bit3 + "]").attr("id", "white");
-		$("div[place=" + bit4 + "]").attr("id", "white");
-		bit1 = bit1 + 1;
-		bit2 = bit2 + 1;
-		bit3 = bit3 + 1;
-		bit4 = bit4 + 1;
-		$("div[place=" + bit1 + "]").attr("id", "red");
-		$("div[place=" + bit2 + "]").attr("id", "red");
-		$("div[place=" + bit3 + "]").attr("id", "red");
-		$("div[place=" + bit4 + "]").attr("id", "red");
-	}
-}
-
-function down() {
-	$("div[place=" + bit1 + "]").attr("id", "white");
-	$("div[place=" + bit2 + "]").attr("id", "white");
-	$("div[place=" + bit3 + "]").attr("id", "white");
-	$("div[place=" + bit4 + "]").attr("id", "white");
-	var first = $("div[place="+(bit1+10)+"]").attr("id");
-	var second = $("div[place="+(bit2+10)+"]").attr("id");
-	var third = $("div[place="+(bit3+10)+"]").attr("id");
-	var fourth = $("div[place="+(bit4+10)+"]").attr("id");
-	if (first=="red"||second=="red"||third=="red"||fourth=="red"){
-		$("div[place=" + bit1 + "]").attr("id", "red");
-		$("div[place=" + bit2 + "]").attr("id", "red");
-		$("div[place=" + bit3 + "]").attr("id", "red");
-		$("div[place=" + bit4 + "]").attr("id", "red");
-	} else if (bit1<191&&bit2<191&&bit3<191&&bit4<191) {
-		bit1 = bit1 + 10;
-		bit2 = bit2 + 10;
-		bit3 = bit3 + 10;
-		bit4 = bit4 + 10;
-		$("div[place=" + bit4 + "]").attr("id", "red");
-		$("div[place=" + bit3 + "]").attr("id", "red");
-		$("div[place=" + bit2 + "]").attr("id", "red");
-		$("div[place=" + bit1 + "]").attr("id", "red");
-	}
-}
-
-function up() {
-	blocky.up();
 }

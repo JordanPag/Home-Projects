@@ -4,22 +4,61 @@ class block {
 		this.bit2 = bit2;
 		this.bit3 = bit3;
 		this.bit4 = bit4;
-		console.log(this.bit1);
+		console.log(this);
+
+		this.moveblock = () => {
+			$("div[place=" + this.bit1 + "]").attr("id", "white");
+			$("div[place=" + this.bit2 + "]").attr("id", "white");
+			$("div[place=" + this.bit3 + "]").attr("id", "white");
+			$("div[place=" + this.bit4 + "]").attr("id", "white");
+			var first = $("div[place="+(this.bit1+10)+"]").attr("id");
+			var second = $("div[place="+(this.bit2+10)+"]").attr("id");
+			var third = $("div[place="+(this.bit3+10)+"]").attr("id");
+			var fourth = $("div[place="+(this.bit4+10)+"]").attr("id");
+			if (x == 1){
+				x = 0;
+				spawnblock();
+			} else if (first=="red"||second=="red"||third=="red"||fourth=="red"){
+				$("div[place=" + this.bit1 + "]").attr("id", "red");
+				$("div[place=" + this.bit2 + "]").attr("id", "red");
+				$("div[place=" + this.bit3 + "]").attr("id", "red");
+				$("div[place=" + this.bit4 + "]").attr("id", "red");
+				time = 1000;
+				spawnblock();
+			} else if (this.bit1<191&&this.bit2<191&&this.bit3<191&&this.bit4<191) {
+				this.bit1 += 10;
+				this.bit2 += 10;
+				this.bit3 += 10;
+				this.bit4 += 10;
+				$("div[place=" + this.bit1 + "]").attr("id", "red");
+				$("div[place=" + this.bit2 + "]").attr("id", "red");
+				$("div[place=" + this.bit3 + "]").attr("id", "red");
+				$("div[place=" + this.bit4 + "]").attr("id", "red");
+				console.log("ready to move");
+				setTimeout(this.moveblock,time);
+			} else {
+				$("div[place=" + this.bit1 + "]").attr("id", "red");
+				$("div[place=" + this.bit2 + "]").attr("id", "red");
+				$("div[place=" + this.bit3 + "]").attr("id", "red");
+				$("div[place=" + this.bit4 + "]").attr("id", "red");
+				time = 1000;
+				spawnblock();
+			}
+		}
+	}
+
+	set(bit1,bit2,bit3,bit4) {
+		this.bit1 = bit1;
+		this.bit2 = bit2;
+		this.bit3 = bit3;
+		this.bit4 = bit4;
 		$("div[place=" + this.bit1 + "]").attr("id", "red");
 		$("div[place=" + this.bit2 + "]").attr("id", "red");
 		$("div[place=" + this.bit3 + "]").attr("id", "red");
 		$("div[place=" + this.bit4 + "]").attr("id", "red");
-		console.log(this);
-		var thisold = this;
 	}
 
-	buffer() {
-		setTimeout(this.moveblock, time);
-	}
-
-	moveblock() {
-		console.log(this);
-		console.log(this.buffer);
+	down() {
 		$("div[place=" + this.bit1 + "]").attr("id", "white");
 		$("div[place=" + this.bit2 + "]").attr("id", "white");
 		$("div[place=" + this.bit3 + "]").attr("id", "white");
@@ -28,16 +67,11 @@ class block {
 		var second = $("div[place="+(this.bit2+10)+"]").attr("id");
 		var third = $("div[place="+(this.bit3+10)+"]").attr("id");
 		var fourth = $("div[place="+(this.bit4+10)+"]").attr("id");
-		if (x == 1){
-			x = 0;
-			spawnblock();
-		} else if (first=="red"||second=="red"||third=="red"||fourth=="red"){
+		if (first=="red"||second=="red"||third=="red"||fourth=="red"){
 			$("div[place=" + this.bit1 + "]").attr("id", "red");
 			$("div[place=" + this.bit2 + "]").attr("id", "red");
 			$("div[place=" + this.bit3 + "]").attr("id", "red");
 			$("div[place=" + this.bit4 + "]").attr("id", "red");
-			time = 1000;
-			spawnblock();
 		} else if (this.bit1<191&&this.bit2<191&&this.bit3<191&&this.bit4<191) {
 			this.bit1 += 10;
 			this.bit2 += 10;
@@ -47,15 +81,76 @@ class block {
 			$("div[place=" + this.bit2 + "]").attr("id", "red");
 			$("div[place=" + this.bit3 + "]").attr("id", "red");
 			$("div[place=" + this.bit4 + "]").attr("id", "red");
-			console.log("ready to move");
-			this.buffer();
-		} else {
+		}
+	}
+
+	left() {
+		$("div[place=" + this.bit1 + "]").attr("id", "white");
+		$("div[place=" + this.bit2 + "]").attr("id", "white");
+		$("div[place=" + this.bit3 + "]").attr("id", "white");
+		$("div[place=" + this.bit4 + "]").attr("id", "white");
+		var first = $("div[place="+(this.bit1-1)+"]").attr("id");
+		var second = $("div[place="+(this.bit2-1)+"]").attr("id");
+		var third = $("div[place="+(this.bit3-1)+"]").attr("id");
+		var fourth = $("div[place="+(this.bit4-1)+"]").attr("id");
+		if (this.bit1 % 10 == 1||this.bit2 % 10 == 1||this.bit3 % 10 == 1||this.bit4 % 10 == 1) {
 			$("div[place=" + this.bit1 + "]").attr("id", "red");
 			$("div[place=" + this.bit2 + "]").attr("id", "red");
 			$("div[place=" + this.bit3 + "]").attr("id", "red");
 			$("div[place=" + this.bit4 + "]").attr("id", "red");
-			time = 1000;
-			spawnblock();
+		} else if (first=="red"||second=="red"||third=="red"||fourth=="red") {
+			$("div[place=" + this.bit1 + "]").attr("id", "red");
+			$("div[place=" + this.bit2 + "]").attr("id", "red");
+			$("div[place=" + this.bit3 + "]").attr("id", "red");
+			$("div[place=" + this.bit4 + "]").attr("id", "red");
+		} else {
+			$("div[place=" + this.bit1 + "]").attr("id", "white");
+			$("div[place=" + this.bit2 + "]").attr("id", "white");
+			$("div[place=" + this.bit3 + "]").attr("id", "white");
+			$("div[place=" + this.bit4 + "]").attr("id", "white");
+			this.bit1 -= 1;
+			this.bit2 -= 1;
+			this.bit3 -= 1;
+			this.bit4 -= 1;
+			$("div[place=" + this.bit1 + "]").attr("id", "red");
+			$("div[place=" + this.bit2 + "]").attr("id", "red");
+			$("div[place=" + this.bit3 + "]").attr("id", "red");
+			$("div[place=" + this.bit4 + "]").attr("id", "red");
+		}
+	}
+
+	right() {
+		$("div[place=" + this.bit1 + "]").attr("id", "white");
+		$("div[place=" + this.bit2 + "]").attr("id", "white");
+		$("div[place=" + this.bit3 + "]").attr("id", "white");
+		$("div[place=" + this.bit4 + "]").attr("id", "white");
+		var first = $("div[place="+(this.bit1+1)+"]").attr("id");
+		var second = $("div[place="+(this.bit2+1)+"]").attr("id");
+		var third = $("div[place="+(this.bit3+1)+"]").attr("id");
+		var fourth = $("div[place="+(this.bit4+1)+"]").attr("id");
+		if (this.bit1 % 10 == 0||this.bit2 % 10 == 0||this.bit3 % 10 == 0||this.bit4 % 10 == 0) {
+			$("div[place=" + this.bit1 + "]").attr("id", "red");
+			$("div[place=" + this.bit2 + "]").attr("id", "red");
+			$("div[place=" + this.bit3 + "]").attr("id", "red");
+			$("div[place=" + this.bit4 + "]").attr("id", "red");
+		} else if (first=="red"||second=="red"||third=="red"||fourth=="red") {
+			$("div[place=" + this.bit1 + "]").attr("id", "red");
+			$("div[place=" + this.bit2 + "]").attr("id", "red");
+			$("div[place=" + this.bit3 + "]").attr("id", "red");
+			$("div[place=" + this.bit4 + "]").attr("id", "red");
+		} else {
+			$("div[place=" + this.bit1 + "]").attr("id", "white");
+			$("div[place=" + this.bit2 + "]").attr("id", "white");
+			$("div[place=" + this.bit3 + "]").attr("id", "white");
+			$("div[place=" + this.bit4 + "]").attr("id", "white");
+			this.bit1 += 1;
+			this.bit2 += 1;
+			this.bit3 += 1;
+			this.bit4 += 1;
+			$("div[place=" + this.bit1 + "]").attr("id", "red");
+			$("div[place=" + this.bit2 + "]").attr("id", "red");
+			$("div[place=" + this.bit3 + "]").attr("id", "red");
+			$("div[place=" + this.bit4 + "]").attr("id", "red");
 		}
 	}
 
