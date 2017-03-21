@@ -5,6 +5,10 @@ function addPosition() {
 	$("#addPositionArea").html("<input id='newPosition' type='text' class='form-control' placeholder='Position Name' aria-describedby='basic-addon1'></input><button type='button' class='btn btn-primary' onclick='saveNewPositionToCloud();'>Submit</button>");
 }
 
+function results() {
+	window.location.href = "results.html";
+}
+
 function saveNewPositionToCloud() {
 	var name = $("#newPosition").val();
 	$("#addPositionArea").html("");
@@ -129,8 +133,24 @@ function start() {
 		voterusers.push(user);
 		voterpasses.push(pass);
 	};
+	for(var i=0; i<numVoters; i++) {
+		var login = new CB.CloudObject("voters");
+		login.set("username", voterusers[i]);
+		login.set("password", voterpasses[i])
+		login.save({
+			success : function(obj){
+			    console.log("saved");
+			},error : function(error){
+			    alert(error);
+			}
+		});
+	}
 	console.log(voterusers);
 	console.log(voterpasses);
+	$("#logins").html("<tr><th></th><th>Username &nbsp;</th><th>Password</th></tr>")
+	for (var i = 0; i < numVoters; i++) {
+		$("#logins").append(`<tr><th>Person ${i+1} &nbsp;</th><td>${voterusers[i]}</td><td>${voterpasses[i]}</td></tr>`)
+	}
 	$("#myModal").modal();
 }
 
